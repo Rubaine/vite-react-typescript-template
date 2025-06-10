@@ -19,19 +19,35 @@
 
 ## ⚡ Quick Start
 
+### 🎯 Méthode 1: GitHub Template (Recommandé)
+
 ```bash
-# 🎯 Option 1: Use GitHub Template (Recommandé)
-# Cliquez sur "Use this template" ↗️ en haut de cette page
-
-# 🎯 Option 2: Clone + Setup
-git clone https://github.com/votre-username/vite-react-core-template.git mon-projet
-cd mon-projet
-rm -rf .git && git init  # Initialiser votre repo
-
-# 📦 Installation et configuration
+# Cliquez sur "Use this template" ↗️ en haut de cette page GitHub
+# puis clonez votre nouveau repo et lancez :
 npm install
 cp .env.example .env     # Configurer votre API_URL
 npm run dev              # Démarrer le serveur ⚡
+```
+
+### 🎯 Méthode 2: Clone Git
+
+```bash
+git clone https://github.com/Rubaine/vite-react-typescript-template.git mon-projet
+cd mon-projet
+rm -rf .git && git init  # Initialiser votre nouveau repo
+npm install
+cp .env.example .env
+npm run dev
+```
+
+### 🎯 Méthode 3: Degit (Plus rapide)
+
+```bash
+npx degit Rubaine/vite-react-typescript-template mon-projet
+cd mon-projet
+npm install
+cp .env.example .env
+npm run dev
 ```
 
 ✨ **Votre app est prête !** → `http://localhost:5173` avec authentification JWT fonctionnelle.
