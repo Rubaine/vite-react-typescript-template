@@ -1,6 +1,6 @@
 {
   "package": {
-    "name": "mon-projet-rubaine",
+    "name": "create-vite-rubaine-react-ts",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
