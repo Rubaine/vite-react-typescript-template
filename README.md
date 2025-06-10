@@ -623,15 +623,6 @@ Les contributions sont les bienvenues ! 🎉
 - **Feature Request** : [Proposer une amélioration](../../issues/new?template=feature_request.md)
 - **Question** : [Démarrer une discussion](../../discussions)
 
-### 📋 Roadmap
-
-- [ ] 🔌 Support WebSocket integration
-- [ ] 🎨 Themes system (dark/light)
-- [ ] 📱 PWA configuration
-- [ ] 🧪 Unit tests setup
-- [ ] 📊 Analytics integration
-- [ ] 🌍 i18n localization
-
 ## 📝 Changelog
 
 ### v1.0.0 (Latest)
