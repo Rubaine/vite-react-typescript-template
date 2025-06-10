@@ -19,7 +19,18 @@
 
 ## ⚡ Quick Start
 
-### 🎯 Méthode 1: GitHub Template (Recommandé)
+### 🎯 Méthode 1: NPM Create (Recommandé) ⚡
+
+```bash
+# Nouvelle méthode officielle avec npm create
+npm create vite-rubaine-react-ts@latest mon-projet
+cd mon-projet
+npm install
+cp .env.example .env     # Configurer votre API_URL
+npm run dev              # Démarrer le serveur ⚡
+```
+
+### 🎯 Méthode 2: GitHub Template
 
 ```bash
 # Cliquez sur "Use this template" ↗️ en haut de cette page GitHub
@@ -29,7 +40,7 @@ cp .env.example .env     # Configurer votre API_URL
 npm run dev              # Démarrer le serveur ⚡
 ```
 
-### 🎯 Méthode 2: Clone Git
+### 🎯 Méthode 3: Clone Git
 
 ```bash
 git clone https://github.com/Rubaine/vite-react-typescript-template.git mon-projet
@@ -40,7 +51,7 @@ cp .env.example .env
 npm run dev
 ```
 
-### 🎯 Méthode 3: Degit (Plus rapide)
+### 🎯 Méthode 4: Degit
 
 ```bash
 npx degit Rubaine/vite-react-typescript-template mon-projet
@@ -51,6 +62,8 @@ npm run dev
 ```
 
 ✨ **Votre app est prête !** → `http://localhost:5173` avec authentification JWT fonctionnelle.
+
+> 💡 **Méthode recommandée** : Utilisez `npm create vite-rubaine-react-ts@latest` pour la création la plus rapide !
 
 > 💡 **Astuce** : Le template inclut une page d'accueil avec des explications détaillées et exemples d'usage
 
@@ -127,7 +140,21 @@ npm run dev
 ## 🚀 Installation
 
 <details>
-<summary><strong>📦 Méthode 1 : Template GitHub (Recommandée)</strong></summary>
+<summary><strong>🎯 Méthode 1 : NPM Create (Recommandée)</strong></summary>
+
+```bash
+# Nouvelle méthode officielle
+npm create vite-rubaine-react-ts@latest mon-projet
+cd mon-projet
+npm install
+```
+
+Cette méthode utilise votre package npm publié et clone automatiquement le template.
+
+</details>
+
+<details>
+<summary><strong>📦 Méthode 2 : Template GitHub</strong></summary>
 
 1. Cliquez sur **"Use this template"** en haut de cette page
 2. Créez votre nouveau repository
@@ -142,10 +169,10 @@ npm install
 </details>
 
 <details>
-<summary><strong>📥 Méthode 2 : Clone direct</strong></summary>
+<summary><strong>📥 Méthode 3 : Clone direct</strong></summary>
 
 ```bash
-git clone https://github.com/votre-username/vite-react-typescript-template.git mon-projet
+git clone https://github.com/Rubaine/vite-react-typescript-template.git mon-projet
 cd mon-projet
 rm -rf .git  # Supprimer l'historique git
 git init     # Initialiser votre propre repo
@@ -155,16 +182,13 @@ npm install
 </details>
 
 <details>
-<summary><strong>🎯 Méthode 3 : NPM Create Template</strong></summary>
+<summary><strong>🚀 Méthode 4 : Degit</strong></summary>
 
 ```bash
-# 📦 Créer un nouveau projet (une fois publié)
-npm create vite@latest mon-projet -- --template votre-username/vite-react-core-template
+npx degit Rubaine/vite-react-typescript-template mon-projet
 cd mon-projet
 npm install
 ```
-
-> ⏳ **Bientôt disponible** - Template en cours de publication sur npm registry
 
 </details>
 
