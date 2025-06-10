@@ -1,6 +1,6 @@
 {
   "package": {
-    "name": "create-vite-rubaine-react-ts",
+    "name": "rubaine-react-template",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
