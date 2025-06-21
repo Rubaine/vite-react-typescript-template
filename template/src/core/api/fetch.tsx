@@ -23,7 +23,7 @@ import type { ApiResponse } from "../config/types";
  * @template T - Type de données attendu en retour
  * @param route - Route de l'API (ex: '/users', '/posts/123')
  * @param headers - Headers HTTP optionnels (ex: Authorization, Content-Type)
- * @returns Promise<ApiResponse<T>> - Réponse standardisée avec status, data, error, success
+ * @returns Promise<ApiResponse> - Réponse standardisée avec status, data, error, success
  *
  * @example
  * ```tsx
@@ -37,10 +37,10 @@ import type { ApiResponse } from "../config/types";
  * const response = await getFetch<User>('/profile', withAuth(token));
  * ```
  */
-export async function getFetch<T>(
+export async function getFetch(
   route: string,
   headers?: Record<string, string>
-): Promise<ApiResponse<T>> {
+): Promise<ApiResponse> {
   try {
     // Construction de la requête avec l'URL de base et les headers
     const response = await fetch(`${Config.Urls.API}${route}`, {
@@ -89,7 +89,7 @@ export async function getFetch<T>(
  * @param route - Route de l'API
  * @param data - Données à envoyer (objet JSON ou FormData)
  * @param headers - Headers HTTP optionnels
- * @returns Promise<ApiResponse<T>> - Réponse standardisée
+ * @returns Promise<ApiResponse> - Réponse standardisée
  *
  * @example
  * ```tsx
@@ -102,11 +102,11 @@ export async function getFetch<T>(
  * const response = await postFetch<UploadResponse>('/upload', formData);
  * ```
  */
-export async function postFetch<T>(
+export async function postFetch(
   route: string,
   data: any,
   headers?: Record<string, string>
-): Promise<ApiResponse<T>> {
+): Promise<ApiResponse> {
   try {
     // Détection automatique du type de données (FormData vs JSON)
     const isFormData = data instanceof FormData;
@@ -156,7 +156,7 @@ export async function postFetch<T>(
  * @param route - Route de l'API
  * @param data - Données à envoyer
  * @param headers - Headers HTTP optionnels
- * @returns Promise<ApiResponse<T>> - Réponse standardisée
+ * @returns Promise<ApiResponse> - Réponse standardisée
  *
  * @example
  * ```tsx
@@ -164,11 +164,11 @@ export async function postFetch<T>(
  * const response = await putFetch<User>('/users/123', { name: 'John Updated', email: 'new@example.com' });
  * ```
  */
-export async function putFetch<T>(
+export async function putFetch(
   route: string,
   data: any,
   headers?: Record<string, string>
-): Promise<ApiResponse<T>> {
+): Promise<ApiResponse> {
   try {
     const isFormData = data instanceof FormData;
 
@@ -215,7 +215,7 @@ export async function putFetch<T>(
  * @param route - Route de l'API
  * @param data - Données à envoyer
  * @param headers - Headers HTTP optionnels
- * @returns Promise<ApiResponse<T>> - Réponse standardisée
+ * @returns Promise<ApiResponse> - Réponse standardisée
  *
  * @example
  * ```tsx
@@ -223,11 +223,11 @@ export async function putFetch<T>(
  * const response = await patchFetch<User>('/users/123', { name: 'New Name' });
  * ```
  */
-export async function patchFetch<T>(
+export async function patchFetch(
   route: string,
   data: any,
   headers?: Record<string, string>
-): Promise<ApiResponse<T>> {
+): Promise<ApiResponse> {
   try {
     const isFormData = data instanceof FormData;
 
@@ -273,7 +273,7 @@ export async function patchFetch<T>(
  * @template T - Type de données attendu en retour
  * @param route - Route de l'API
  * @param headers - Headers HTTP optionnels
- * @returns Promise<ApiResponse<T>> - Réponse standardisée
+ * @returns Promise<ApiResponse> - Réponse standardisée
  *
  * @example
  * ```tsx
@@ -284,10 +284,10 @@ export async function patchFetch<T>(
  * }
  * ```
  */
-export async function deleteFetch<T>(
+export async function deleteFetch(
   route: string,
   headers?: Record<string, string>
-): Promise<ApiResponse<T>> {
+): Promise<ApiResponse> {
   try {
     const response = await fetch(`${Config.Urls.API}${route}`, {
       method: "DELETE",

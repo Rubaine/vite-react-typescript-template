@@ -2,7 +2,7 @@
  * ========================
  * TYPES CENTRALISÉS
  * ========================
- * 
+ *
  * Définitions TypeScript centralisées pour toute l'application.
  * Ce fichier contient tous les types utilisés dans le template.
  */
@@ -14,9 +14,9 @@
 /**
  * Interface de réponse standardisée pour toutes les requêtes API
  */
-export interface ApiResponse<T> {
+export interface ApiResponse {
   status: number;
-  data: T | null;
+  data: any;
   error?: string;
   success: boolean;
 }
