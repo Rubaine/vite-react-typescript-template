@@ -1,6 +1,6 @@
 {
   "name": "create-vite-rubaine-react-ts",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Template Vite + React + TypeScript avec système d'authentification et utilitaires API",
   "bin": {
     "create-vite-rubaine-react-ts": "./bin/create-vite-rubaine-react-ts.js"
